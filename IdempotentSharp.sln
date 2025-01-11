@@ -1,8 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{498BE74E-8683-4DBC-903E-723ADF4D48B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{1E45D406-8AA4-4B33-B90D-47147A3EA6A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdempotentSharp.Core", "src\IdempotentSharp.Core\IdempotentSharp.Core.csproj", "{4F6F0A1C-4199-418B-B447-AB532BE68C96}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4F6F0A1C-4199-418B-B447-AB532BE68C96} = {498BE74E-8683-4DBC-903E-723ADF4D48B8}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F6F0A1C-4199-418B-B447-AB532BE68C96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F6F0A1C-4199-418B-B447-AB532BE68C96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F6F0A1C-4199-418B-B447-AB532BE68C96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F6F0A1C-4199-418B-B447-AB532BE68C96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
