@@ -25,7 +25,7 @@ public sealed class IdempotentFilter(int cacheTimeInMinutes = IdempotentFilter.D
     {
         if (!TryGetRequestId(context.HttpContext, out Guid requestId))
         {
-            return Results.BadRequest("Invalid or missing Idempotence-Key header");
+            return Results.BadRequest("Invalid or missing X-Request-Id header");
         }
 
         var cacheKey = GetCacheKey(requestId);
