@@ -4,6 +4,16 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <LangVersion>latest</LangVersion>
+        <Version>1.0.0</Version>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+        <RepositoryUrl>https://github.com/furkandeveloper/IdempotentSharp</RepositoryUrl>
+        <Authors>furkandeveloper</Authors>
+        <Description>This repo, provides idempotent rest api for .Net</Description>
+        <PackageTags>mariadb, profiler, query-profiler,query-analyzer</PackageTags>
+        <PackageReleaseNotes>
+            🚀 Initial release
+        </PackageReleaseNotes>
     </PropertyGroup>
 
     <ItemGroup>
