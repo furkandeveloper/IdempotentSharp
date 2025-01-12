@@ -11,9 +11,6 @@ namespace IdempotentSharp.Core.Responses;
 /// </param>
 public class IdempotentResponse(int statusCode, object? value)
 {
-    /// <summary>
-    /// Http Status Code
-    /// </summary>
     public int StatusCode { get; } = statusCode;
     public object? Value { get; } = value;
 }
