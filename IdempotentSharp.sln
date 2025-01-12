@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdempotentSharp.AspNetCore.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdempotentSharp.Sample.AspNetCore", "sample\IdempotentSharp.Sample.AspNetCore\IdempotentSharp.Sample.AspNetCore.csproj", "{6000E4B8-838B-4D83-835F-26F0F671D99E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdempotentSharp.Sample.MinimalApi", "sample\IdempotentSharp.Sample.MinimalApi\IdempotentSharp.Sample.MinimalApi.csproj", "{43E70AA8-FD48-409C-8B57-721DA4939339}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,6 +24,7 @@ Global
 		{FA3F7E66-0C0F-41F5-87AF-C592E8F46AD6} = {498BE74E-8683-4DBC-903E-723ADF4D48B8}
 		{BCD8EABC-234A-490C-A7EB-B98E705225CB} = {498BE74E-8683-4DBC-903E-723ADF4D48B8}
 		{6000E4B8-838B-4D83-835F-26F0F671D99E} = {1E45D406-8AA4-4B33-B90D-47147A3EA6A7}
+		{43E70AA8-FD48-409C-8B57-721DA4939339} = {1E45D406-8AA4-4B33-B90D-47147A3EA6A7}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{4F6F0A1C-4199-418B-B447-AB532BE68C96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -40,5 +43,9 @@ Global
 		{6000E4B8-838B-4D83-835F-26F0F671D99E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6000E4B8-838B-4D83-835F-26F0F671D99E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6000E4B8-838B-4D83-835F-26F0F671D99E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43E70AA8-FD48-409C-8B57-721DA4939339}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43E70AA8-FD48-409C-8B57-721DA4939339}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43E70AA8-FD48-409C-8B57-721DA4939339}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43E70AA8-FD48-409C-8B57-721DA4939339}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
