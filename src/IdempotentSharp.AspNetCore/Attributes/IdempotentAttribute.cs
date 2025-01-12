@@ -13,11 +13,11 @@ namespace IdempotentSharp.AspNetCore.Attributes;
 /// This Attribute provides idempotent endpoint functionality.
 /// </summary>
 [AttributeUsage(AttributeTargets.Method, AllowMultiple = false)]
-public sealed class IdempotentAttribute(int cacheTimeInMinutes = IdempotentAttribute.DefaultCacheTimeInMinutes)
+public sealed class IdempotentAttribute(int cacheTimeInMinutes = IdempotentAttribute.DefaultCacheTimeInSeconds)
     : Attribute, IAsyncActionFilter
 {
-    private const int DefaultCacheTimeInMinutes = 60;
-    private readonly TimeSpan _cacheDuration = TimeSpan.FromMinutes(cacheTimeInMinutes);
+    private const int DefaultCacheTimeInSeconds = 60;
+    private readonly TimeSpan _cacheDuration = TimeSpan.FromSeconds(cacheTimeInMinutes);
 
     /// <summary>
     /// Executes the action filter asynchronously, providing idempotent endpoint functionality.

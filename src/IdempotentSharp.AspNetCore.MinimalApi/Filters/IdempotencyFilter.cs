@@ -9,11 +9,11 @@ namespace IdempotentSharp.AspNetCore.MinimalApi.Filters;
 /// <summary>
 /// Provides idempotent functionality as an endpoint filter for Minimal API endpoints.
 /// </summary>
-public sealed class IdempotentFilter(int cacheTimeInMinutes = IdempotentFilter.DefaultCacheTimeInMinutes)
+public sealed class IdempotentFilter(int cacheTimeInMinutes = IdempotentFilter.DefaultCacheTimeInSeconds)
     : IEndpointFilter
 {
-    private const int DefaultCacheTimeInMinutes = 60;
-    private readonly TimeSpan _cacheDuration = TimeSpan.FromMinutes(cacheTimeInMinutes);
+    private const int DefaultCacheTimeInSeconds = 60;
+    private readonly TimeSpan _cacheDuration = TimeSpan.FromSeconds(cacheTimeInMinutes);
 
     /// <summary>
     /// Invokes the endpoint filter asynchronously, providing idempotent functionality.
