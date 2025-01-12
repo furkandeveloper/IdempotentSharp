@@ -13,7 +13,7 @@ namespace IdempotentSharp.AspNetCore.Attributes;
 /// This Attribute provides idempotent endpoint functionality.
 /// </summary>
 [AttributeUsage(AttributeTargets.Method, AllowMultiple = false)]
-internal sealed class IdempotentAttribute(int cacheTimeInMinutes = IdempotentAttribute.DefaultCacheTimeInMinutes)
+public sealed class IdempotentAttribute(int cacheTimeInMinutes = IdempotentAttribute.DefaultCacheTimeInMinutes)
     : Attribute, IAsyncActionFilter
 {
     private const int DefaultCacheTimeInMinutes = 60;
@@ -29,7 +29,7 @@ internal sealed class IdempotentAttribute(int cacheTimeInMinutes = IdempotentAtt
     {
         if (!TryGetRequestId(context, out Guid requestId))
         {
-            context.Result = new BadRequestObjectResult("Invalid or missing Idempotence-Key header");
+            context.Result = new BadRequestObjectResult("Invalid or missing X-Request-Id header");
             return;
         }
 
