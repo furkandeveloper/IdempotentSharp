@@ -4,7 +4,7 @@
 </p>
 
 ## Give a Star 🌟
-If you liked the project or if **EasyProfiler** helped you, please give a star.
+If you liked the project or if **IdempotentSharp** helped you, please give a star.
 
 ### Purpose
 **IdempotentSharp** allows you to develop idempotent endpoints.
